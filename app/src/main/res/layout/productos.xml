@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageButton
+        android:layout_width="124dp"
+        android:layout_height="115dp"
+        android:id="@+id/IBtnCer"
+        android:src="@mipmap/cerveza"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/IBtnBot"
+        android:layout_gravity="right"
+        android:layout_weight="0.06"
+        android:src="@mipmap/botanas"
+        android:layout_toRightOf="@+id/IBtnCer"
+        android:layout_toEndOf="@+id/IBtnCer"
+        android:layout_alignTop="@+id/IBtnCer"
+        android:layout_alignBottom="@+id/IBtnCer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CERVEZAS"
+        android:id="@+id/textView"
+        android:layout_below="@+id/IBtnCer"
+        android:layout_alignRight="@+id/IBtnCer"
+        android:layout_alignEnd="@+id/IBtnCer"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOTANAS"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/IBtnBot"
+        android:layout_alignLeft="@+id/IBtnBot"
+        android:layout_alignStart="@+id/IBtnBot"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <ImageButton
+        android:layout_width="124dp"
+        android:layout_height="115dp"
+        android:id="@+id/IBtnRon"
+        android:src="@mipmap/coparon"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/IBtnCer"
+        android:layout_alignStart="@+id/IBtnCer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RON"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/IBtnRon"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <ImageButton
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/IBtnMez"
+        android:layout_gravity="right"
+        android:layout_weight="0.06"
+        android:src="@mipmap/copamezcal"
+        android:layout_alignLeft="@+id/IBtnBot"
+        android:layout_alignStart="@+id/IBtnBot"
+        android:layout_below="@+id/textView2"
+        android:layout_above="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEZCAL"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <ImageButton
+        android:layout_width="124dp"
+        android:layout_height="115dp"
+        android:id="@+id/IBtnWhi"
+        android:src="@mipmap/copawhisky"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/IBtnMez"
+        android:layout_toStartOf="@+id/IBtnMez" />
+
+    <ImageButton
+        android:layout_width="124dp"
+        android:layout_height="115dp"
+        android:id="@+id/IBtnTeq"
+        android:src="@mipmap/copa"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/IBtnMez"
+        android:layout_alignStart="@+id/IBtnMez" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WHISKY"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/IBtnWhi"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEQUILA"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/IBtnTeq"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPRAR"
+        android:id="@+id/BtnAceptarPro"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

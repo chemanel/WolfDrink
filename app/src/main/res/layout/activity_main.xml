@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ff5c4d49">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IBtnProd"
+        android:src="@mipmap/beer128"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IBtCompras"
+        android:src="@mipmap/shop"
+        android:layout_below="@+id/IBtnProd"
+        android:layout_alignLeft="@+id/IBtnProd"
+        android:layout_alignStart="@+id/IBtnProd"
+        android:layout_alignRight="@+id/IBtnProd"
+        android:layout_alignEnd="@+id/IBtnProd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IBtnOfer"
+        android:src="@mipmap/sale"
+        android:layout_below="@+id/IBtCompras"
+        android:layout_alignLeft="@+id/IBtCompras"
+        android:layout_alignStart="@+id/IBtCompras" />
+
+</RelativeLayout>
